@@ -1,0 +1,42 @@
+<%- include('./partials/header') %>
+<!-- <%- include('./partials/nav') %> -->
+
+<div
+  class="container d-flex justify-content-center align-items-center"
+  style="height: 100vh"
+>
+  <form method="post" action="/login">
+    <h1>Welcome to Library Management system</h1>
+    
+    
+    <div class="d-flex m-5">
+        <h4>Add Users and Admin details to save Data</h4>
+      <p>
+        <a href="/add" class="btn border border-primary d-inline m-5"
+          >Add User</a
+        >
+      </p>
+      <p>
+        <a href="/push" class="btn border border-primary d-inline m-5"
+          >Add Admin</a
+        >
+      </p>
+    </div>
+    
+    <div class="d-flex m-5">
+        <h4>Authenticate Users and Admin to Access manage Data</h4>
+      <p>
+        <a href="/login" class="btn border border-primary d-inline m-5"
+          > User</a
+        >
+      </p>
+      <p>
+        <a href="/adminlogin" class="btn border border-primary d-inline m-5"
+          > Admin</a
+        >
+      </p>
+    </div>
+  </form>
+</div>
+
+<%- include('./partials/footer') %>
